@@ -1,0 +1,164 @@
+1.
+	# public static void main(String[] args)
+		->public == Access Specifier, here method is visible to all Package.
+		->static == Non access Specifier,here there is no need to create Object to acces the method,and if we make method as static it belongd to that class only.
+		->void == return type, here main method returns nothing.
+		-> main == name of the method
+		->String[] args == Command line argument
+		
+	# Class
+		-> Class is a real time entity which has a blueprint of an Object.
+		->Class name should be start with Uppercase Only.
+	# Object
+		->Object is a ref of Of the class.
+		->Object have states and behaviours(fields and methods).
+		
+	1.JDK
+	2.JRE
+	3.JVM
+	->JDK:JAVA DEVELOPMENT KIT
+		->jdk=jre+jvm
+		->jdk is platform dependent
+	->JRE:JAVA RUNTIME ENVIRONMENT
+		->jre=jvm+set of libraries
+		->jre is also platform dependent
+	->JVM:JAVA VIRTUAL MACHINE
+		->platform dependent
+		1.loades the code
+		2.check the code
+		3.excecute the code
+		4.Provide runtime environment
+		
+3.
+	class ReverseString{
+		public static void main(String[] args){
+			String name="program";
+			int size=name.length();
+			for(int i=size-1;  i<=name.length(); i--){
+				System.out.println(name.charAt[i]);
+			}
+		}
+	}
+	
+2.
+	class reverseNumber{
+	public static void main(String[] args){
+	int num=1234;
+	String numString=String.parseString(num);
+	int size=numString.length();
+	for(int i=size-1;  i<=name.length(); i--){
+				System.out.println(name.charAt[i]);
+			}
+	
+	}
+	}
+	
+4.
+		Constructor and types?
+	Constructor is a special method and a copy of class,its is ceated to initialize the class variables.
+	Constructor name should be same as class name.
+	*Types:
+		1.Parameterized Constructor
+				Syntax:
+						access specifier ClassName()
+				eg:
+					class Color(){
+					public int name;
+					
+						public Color()
+						{
+						
+						}
+					}
+						
+						
+		2.NON-Parameterized Constructor
+				Syntax:
+						access specifier ClassName(Parameter)
+				eg:
+					class Color(){
+					public int name;
+					
+						public Color(int name)
+						{
+							this.name=name;
+						}
+					}
+
+5.
+
+	# this=
+			->this is one of the keyword in java.
+			-> it is used to differenciate the local variable and class variable 
+			-> this is used to point to the current reference in the program
+			
+	# this()
+			-> this method is used to make chaining form one constructor to another constructor whithin the same class .
+			
+7.
+	# main Method is static ?
+	->	because if we declare method as a static there is no need to  create an object to acces the method.
+	-> by making method as static it is static to that class only.
+	-> in memory static method will first load.
+	
+	method types:
+		1.Static methods
+		2.non static methods.
+		3.Parameterised method.
+		4.no parameretized method.
+		
+8.
+	class Number{
+		public static void main(String[] args){
+		mul();
+		}
+		
+		public void mul(){
+		int n;
+		for(i=0, i<=n; i++){
+		if(n%5=0){
+			System.out.println(n);
+			}
+		}
+			
+		}
+	}
+	
+9.about class loading and class loaders.
+
+10.
+	->yes we can make constructor as a private but there is no use of making cunstructor a private.
+	->we can overload a constructor 
+	-> constructor over loading is having different and difference in parameters
+		eg:
+					class Color(){
+					public String name;
+					public int num;
+						public Color(String name)
+						{
+							this.name=name;
+						}
+						
+						public Color(int num)
+						{
+							this.num=num;
+						}
+						public Color(String name,int num)
+						{
+						    this.name=name;
+							this.num=num;
+						}
+					}
+					
+11.
+	class NumArray{
+	int[] array={12,2,3,45,6,7,6}
+	int size=array.length();
+	public static void main(String args[]){
+		System.out.println(size);
+	}
+	}
+	
+12.
+	YES we can use instance Variable in static method.
+		
